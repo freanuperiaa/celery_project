@@ -26,3 +26,6 @@ def raise_by_self(x):
             num *= x
         return num
 
+@app.task
+def add(x, y):
+    return x + y
